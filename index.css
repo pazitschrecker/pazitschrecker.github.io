@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #456b73;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  font-size: 200px;
+  font-weight: bolder;
+
+  opacity: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  align-items: flex-start;
+  margin: 0 0 0 2rem;
+  font-size: 100px;
+  font-weight: bolder;
+  opacity: 50%;
+}
+
+h3 {
+  align-items: flex-start;
+  margin: 0 0 0 2rem;
+  font-size: 40px;
+  opacity: 80%;
+}
+
+p {
+  font-size: 24px;
+  color: gray;
+}
+
+.section-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-obj {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+.project-single-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 0 0 0;
+}
+
+.project-img {
+  width: 200px;
+  height: 200px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 3rem 3rem;
+  padding: 2rem 3rem 3rem 3rem;
+}
+
+.single-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 0 1rem 0;
+}
+
+a.project-link:hover {
+  text-decoration-color: #bb999c;
+  opacity: 30%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  padding: 4rem 0 4rem 0;
+}
+
+.project-description {
+  font-family: "Open Sans", sans-serif;
+}
+
+.project-title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.active-item {
+  padding-bottom: 0.01rem;
+  border-bottom-style: solid;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.section-obj {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.section-img {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: auto;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #acbdc3;
+  width: 100%;
+  max-height: 100%;
+}
