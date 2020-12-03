@@ -6,10 +6,6 @@ function removeActive() {
 }
 
 $(document).ready(function () {
-  $(".nav-link").click(function () {
-    console.log("hello");
-  });
-
   $("#get-in-touch").click(function () {
     console.log("hello");
   });

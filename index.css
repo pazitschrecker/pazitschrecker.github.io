@@ -4,6 +4,7 @@ html {
 
 body {
   color: #456b73;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -11,7 +12,6 @@ header {
   flex-direction: row;
   font-size: 200px;
   font-weight: bolder;
-
   opacity: 40%;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@ h2 {
   font-size: 100px;
   font-weight: bolder;
   opacity: 50%;
+  font-family: "Playfair Display", cursive;
 }
 
 h3 {
@@ -30,6 +31,7 @@ h3 {
   margin: 0 0 0 2rem;
   font-size: 40px;
   opacity: 80%;
+  color: #bb999c;
 }
 
 p {
@@ -60,8 +62,8 @@ p {
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  max-width: 100%;
+  margin-bottom: 4rem;
 }
 
 .project-container {
@@ -74,8 +76,8 @@ p {
 .section-container {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem 3rem 3rem;
-  padding: 2rem 3rem 3rem 3rem;
+  margin: 0 0 2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .single-row {
@@ -95,8 +97,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: rgba(69, 107, 115, 0.4);
   padding: 4rem 0 4rem 0;
+  font-size: 16px;
+  color: black;
 }
 
 .project-description {
@@ -136,6 +140,11 @@ footer {
   text-align: left;
 }
 
+.center {
+  align-items: center;
+  align-self: center;
+}
+
 .right {
   text-align: right;
 }
@@ -147,4 +156,26 @@ footer {
   background-color: #acbdc3;
   width: 100%;
   max-height: 100%;
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: #bb999c;
+  margin: 3rem;
+}
+.contact-icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.basic-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #bb999c;
 }
