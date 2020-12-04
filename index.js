@@ -29,4 +29,8 @@ $(document).ready(function () {
     removeActive();
     $(this).addClass("active-item");
   });
+
+  $("#github-cf-resources").click(function () {
+    window.location.href = "https://github.com/zoepanas/cf-resources";
+  });
 });
