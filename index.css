@@ -18,7 +18,7 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Alfa Slab One", cursive;
-  margin: 6rem 4vw 4rem 4vw;
+  margin: 6rem 2rem 4rem 2rem;
 }
 
 h1 {
@@ -119,12 +119,9 @@ h2 {
 
 h3 {
   align-items: flex-start;
-  margin: 0 0 0 2rem;
-  font-size: 40px;
-  opacity: 70%;
-  font-weight: 800;
-  font-family: "Playfair Display";
-  color: #bb999c;
+  margin: 0 0 1rem 1rem;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .jumbotron {
@@ -294,7 +291,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: "Alfa Slab One", cursive;
-    margin: 2rem 4vw 4rem 4vw;
+    margin: 2rem 8rem 4rem 8rem;
   }
 }
 
@@ -363,4 +360,17 @@ footer {
     max-width: 100%;
     margin: 1rem 1rem 1rem 2rem;
   }
+}
+
+.see-resume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.less-space {
+  margin: 2rem 6rem 2rem 6rem;
 }
