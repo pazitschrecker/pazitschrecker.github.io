@@ -18,7 +18,7 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Alfa Slab One", cursive;
-  margin: 6rem 4rem 4rem 4rem;
+  margin: 6rem 4vw 4rem 4vw;
 }
 
 h1 {
@@ -78,6 +78,26 @@ h2 {
   max-width: 50%;
 }
 
+.about-sub {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 2rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 6rem 4rem 6rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
 .sub-section-img {
   max-width: 100%;
   height: auto;
@@ -108,7 +128,8 @@ h3 {
 }
 
 .jumbotron {
-  /*background-color: rgba(69, 107, 115, 0.4);*/
+  background-color: rgba(69, 107, 115, 0.4);
+  margin-bottom: 10rem;
 }
 
 p {
@@ -241,7 +262,8 @@ footer {
 
 .contact-icon {
   font-size: 40px;
-  color: #bb999c;
+  color: black;
+  opacity: 40%;
   margin: 3rem;
 }
 .contact-icon-row {
@@ -259,6 +281,9 @@ footer {
 .pink-btn {
   background-color: #bb999c;
 }
+.space {
+  margin-left: 6px;
+}
 
 @media only screen and (max-width: 900px) {
   header {
@@ -269,15 +294,15 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: "Alfa Slab One", cursive;
-    margin: 2rem 4rem 4rem 2rem;
+    margin: 2rem 4vw 4rem 4vw;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   header {
     display: flex;
     flex-direction: row;
-    font-size: 80px;
+    font-size: 70px;
     opacity: 20%;
     justify-content: center;
     align-items: center;
@@ -319,23 +344,23 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
   }
-  .about-img-phone {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .about-img {
     display: flex;
     flex-direction: row;
     max-width: 100%;
     align-self: center;
     margin: 2rem 0 1rem 0;
   }
-  .about-sub-phone {
+  .about-sub {
     display: flex;
     flex-direction: row;
     max-width: 100%;
     margin: 1rem 1rem 1rem 2rem;
-  }
-  .about-section-phone {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: center;
   }
 }

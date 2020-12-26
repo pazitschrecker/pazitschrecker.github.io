@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://use.fontawesome.com/0b04c030ef.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display:wght@900&family=Bevan&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--<link rel="icon" href=img/favicon.svg>-->
+    <script src="index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+  </head>
+  <body>
+    <title>Pazit's Portfolio</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#title"
+        ><i class="fas fa-head-side-asterisk icon"></i
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link pink" id="nav-about" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-resume" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-projects" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 id="about">About Me</h2>
+
+      <div class="section-container">
+        <div class="project-container">
+          <div class="section-obj">
+            <img class="section-img" src="img/Pazit_Headshot.jpeg" alt="" />
+          </div>
+          <div class="section-obj">
+            <div class="single-row">
+              <p>
+                Hi! I'm Pazit, a software engineer based in New York City. I'm
+                currently a senior at Barnard College majoring in computer
+                science on the Applications Track. I enjoy creating web
+                applications, designing User Interfaces, and I'm always looking
+                to learn new skills.
+              </p>
+            </div>
+            <div class="single-row right" href="#contact">
+              <button
+                href="#contact"
+                id="#get-in-touch"
+                class="btn btn-lg pink-btn"
+              >
+                Get in Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <h2 id="resume">Resume</h2>
+      <div class="section-row section-container">
+        <p class="section-text">This is my resume: RESUME</p>
+      </div>
+      <hr />
+
+      <h2 id="projects">My Projects</h2>
+      <div class="section-container">
+        <div class="single-row">
+          <p class="section-text">
+            I've been able to work on a lot of cool projects recently! Reach out
+            if you're interested in learning more.
+          </p>
+        </div>
+      </div>
+
+      <h3>Community Fridge Resources</h3>
+      <div class="section-container">
+        <div class="project-content">
+          <img class="project-img" src="img/cf-resources1.png" alt="" />
+          <p>
+            Community Fridge Resources is a web application created to
+            consolidate community fridge resources into one place. This
+            application is the result of the iterative design process,
+            collaboration with four other students from varying disciplines, and
+            multiple rounds of user testing and feedback. This was my first time
+            participating in al stages of the software development process in a
+            team and throughout the semester I learned a lot about how to employ
+            tech for social good as well as how to collaborate virtually and
+            across disciplines.
+          </p>
+          <div class="project-single-row">
+            <button id="github-cf-resources" class="btn">View on Github</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>Ballet Basics</h3>
+      <div class="section-container">
+        <div class="project-content">
+          <img
+            class="project-img"
+            src="img/ballet-basics.jpg"
+            alt="Images fo Ballet Basics app: homepage, flashcards, and quiz"
+          />
+          <p>
+            Ballet Basics is a Python Flask web application that teaches a user
+            the five fundamental ballet positions for both arms and feet, and
+            allows the user to test their skills with an interactive quiz. This
+            project was the culmination of a semester of learning about User
+            Interface design, implementation, and the iterative design process.
+            Creating Ballet Basics marked my first time engaging in the
+            iterative design process and I gained a greater understanding of the
+            importance of many aspects of the process, including user interviews
+            and both high and low fidelity prototyping.
+          </p>
+          <a
+            class="project-single-row"
+            href="https://github.com/pazitschrecker/BalletBasics"
+            >View on Github</a
+          >
+        </div>
+      </div>
+
+      <h3>Community Fridge Resources</h3>
+      <div class="section-container">
+        <div class="project-content">
+          <p>
+            This semester I've been working with a group of 4 other students to
+            create a project interest technology project. We interviewed many
+            community fridge organizers throughout New York City and discovered
+            that there was no central hub to share resources, despite this being
+            viewed as helpful. To fill this gap, we created a web app that lets
+            users access contact templates, a forum for tips, and guides created
+            by organizers. I did a large portion of the coding for the web
+            application on both the front and back end.
+          </p>
+          <a
+            class="project-single-row"
+            href="https://github.com/zoepanas/cf-resources"
+            >View on Github</a
+          >
+        </div>
+      </div>
+
+      <h3>Community Fridge Resources</h3>
+      <div class="section-container">
+        <div class="project-content">
+          <p>
+            This semester I've been working with a group of 4 other students to
+            create a project interest technology project. We interviewed many
+            community fridge organizers throughout New York City and discovered
+            that there was no central hub to share resources, despite this being
+            viewed as helpful. To fill this gap, we created a web app that lets
+            users access contact templates, a forum for tips, and guides created
+            by organizers. I did a large portion of the coding for the web
+            application on both the front and back end.
+          </p>
+          <a
+            class="project-single-row"
+            href="https://github.com/zoepanas/cf-resources"
+            >View on Github</a
+          >
+        </div>
+      </div>
+
+      <h3>Community Fridge Resources</h3>
+      <div class="section-container">
+        <div class="project-content">
+          <p>
+            I took over as the web director of Columbia University Ballet
+            Ensemble in January of 2019, after the website had not been updated
+            for many semesters. In that time I have worked with the Artistic
+            director to choose a new design for the website and then worked to
+            edit the source code templates to better fit the of the
+            organization.
+          </p>
+          <a
+            class="project-single-row"
+            href="https://github.com/zoepanas/cf-resources"
+            >View on Github</a
+          >
+        </div>
+      </div>
+      <hr />
+      <h2 id="contact">Contact</h2>
+      <div class="section-row section-container">
+        <p class="section-text">
+          Reach out if you're interested in collaborating or learning more about
+          any of my projects! I'm also currently open to full-time offers once I
+          graduate (May 2021).
+        </p>
+        <div class="section-row">
+          <div class="contact-icon-row">
+            <a href="https://www.linkedin.com/in/pazit-schrecker-53495a164/"
+              ><i class="fab fa-linkedin-in contact-icon"></i
+            ></a>
+            <a href="mailto:pazitrose1999@gmail.com">
+              <i class="far fa-envelope contact-icon"></i
+            ></a>
+            <a href="https://www.facebook.com/pazit.schrecker/"
+              ><i class="fab fa-facebook contact-icon"></i
+            ></a>
+            <a href="https://www.instagram.com/thedancingveggie/"
+              ><i class="fab fa-instagram contact-icon"></i
+            ></a>
+            <a href="https://github.com/pazitschrecker"
+              ><i class="fab fa-github contact-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Website Designed and Maintained by Pazit Schrecker</footer>
+  </body>
+</html>
