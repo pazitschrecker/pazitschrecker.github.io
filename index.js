@@ -33,4 +33,9 @@ $(document).ready(function () {
   $("#github-cf-resources").click(function () {
     window.location.href = "https://github.com/zoepanas/cf-resources";
   });
+
+  $("#expand-navs").click(function () {
+    console.log("trying to toggle");
+    $("#navbarSupportedContent").toggle();
+  });
 });
