@@ -1,0 +1,68 @@
+.performanceContainer {
+    background-color: black;
+    padding-top: 80px;
+}
+
+.performancePhotos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+    flex-wrap: wrap;
+}
+
+
+.performancePhoto {
+    max-width: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.closeModalButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+.photoModalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.photoModal {
+    width: 500px;
+    height: 500px;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    a {
+        color: var(--color-text);
+
+    }
+
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+    .photoModal {
+        display: none;
+    }
+
+    .performancePhoto {
+        cursor: unset;
+    }
+
+}

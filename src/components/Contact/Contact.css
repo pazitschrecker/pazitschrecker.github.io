@@ -1,0 +1,38 @@
+@import "../../vars.css";
+
+.containerContact {
+    color: var(--color-text);
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 58px 10%;
+    gap: 10px;
+    background-color: rgba(164, 184, 185, 0.883);
+}
+
+.text p {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 26px;
+    padding-left: 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 0;
+}
+
+.link a {
+    color: var(--color-text);
+    text-decoration: none;
+}
