@@ -59,7 +59,7 @@ export const Performance = () => {
 
     return (
         <section className="performanceContainer" id="performance">
-            <h2 className="title flex-justify-center">Media</h2>
+            <h2 className="title flex-justify-center">Selected Performance Photos</h2>
             <p className="flex-justify-center subtitle">Please <a href="#contact" className="spaceLeft spaceRight">contact me</a> for videos for full acts</p>
             <div className="performancePhotos">
                 {_.map(_.keys(imageDescriptionMap), key => photoItem(key))}

@@ -17,7 +17,7 @@ export const Contact = () => {
                     <a href="mailto:pazit.schrecker@gmail.com"><u>pazit.schrecker@gmail.com</u></a>
                 </li>
                 <li className="link"><CiInstagram />
-                    <a href="https://www.linkedin.com/myname"><u>@pazitrose</u></a>
+                    <a href="https://instagram.com/pazitrose/"><u>@pazitrose</u></a>
                 </li>
 
             </ul>
