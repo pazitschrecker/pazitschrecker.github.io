@@ -2,6 +2,7 @@
   "name": "pazit-rose-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pazitschrecker.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -23,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-modal": "^3.16.3"
+    "@types/react-modal": "^3.16.3",
+    "gh-pages": "^6.2.0"
   }
 }

@@ -1,0 +1,8 @@
+# General OS
+.DS_Store
+
+# Build excludes
+build/
+
+# Static files generated at build time
+node_modules/
