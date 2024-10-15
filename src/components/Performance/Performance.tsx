@@ -1,4 +1,6 @@
+import _ from 'lodash';
 import React, { useCallback, useState } from "react";
+
 import ReactModal from 'react-modal';
 import { useIsMobile, useIsTablet } from "../../utils";
 
@@ -11,14 +13,18 @@ import cryBabySplit from '../../images/cryBabySplit.jpg';
 import heroSplitAANYC from '../../images/heroSplitAANYC.jpg';
 import toePoseHeroCH from '../../images/toePoseHeroCH.jpg';
 import heroAANYCMarch from '../../images/heroAANYCMarch.jpg';
+import physicalAANYC from '../../images/physicalAANYC.jpg';
+import arabesqueCryBaby from '../../images/arabesqueCryBaby.jpg';
 
 const imageDescriptionMap = {
     [heroSplitAANYC]: { "description": "Holding Out For a Hero", "subtitle": "Aerial Arts NYC - March 2024", "credit": "Laurie Bloom" },
-    [heroCirqueHaus]: { "description": "Holding Out For a Hero", "subtitle": "Cirque Haus - June 2024", "credit": "Mikail" },
-    [cryBabySplit]: { "description": "Cry Baby", "subtitle": "STREB - September 2024", "credit": "Wendy" },
-    [toePoseHeroCH]: { "description": "Holding Out For a Hero", "subtitle": "Cirque Haus - June 2024", "credit": "Mikail" },
-    [cryBabyBW]: { "description": "Cry Baby", "subtitle": "STREB - September 2024", "credit": "Wendy" },
-    [heroAANYCMarch]: { "description": "Holding Out For a Hero", "subtitle": "Aerial Arts NYC - March 2024", "credit": "Amy" }
+    [heroCirqueHaus]: { "description": "Holding Out For a Hero", "subtitle": "Cirque Haus - June 2024", "credit": "Mikhail Lipyanskiy" },
+    [cryBabySplit]: { "description": "Cry Baby", "subtitle": "STREB - September 2024", "credit": "Wendy Wild" },
+    [toePoseHeroCH]: { "description": "Holding Out For a Hero", "subtitle": "Cirque Haus - June 2024", "credit": "Mikhail Lipyanskiy" },
+    [cryBabyBW]: { "description": "Cry Baby", "subtitle": "STREB - September 2024", "credit": "Wendy Wild" },
+    [heroAANYCMarch]: { "description": "Holding Out For a Hero", "subtitle": "Aerial Arts NYC - March 2024", "credit": "Amy Tsai" },
+    [physicalAANYC]: { "description": "Physical", "subtitle": "Aerial Arts NYC - December 2023", "credit": "Laurie Bloom" },
+    [arabesqueCryBaby]: { "description": "Cry Baby", "subtitle": "STREB - September 2024", "credit": "Wendy Wild" },
 }
 
 const customStyles = {
@@ -56,12 +62,7 @@ export const Performance = () => {
             <h2 className="title flex-justify-center">Media</h2>
             <p className="flex-justify-center subtitle">Please <a href="#contact" className="spaceLeft spaceRight">contact me</a> for videos for full acts</p>
             <div className="performancePhotos">
-                {photoItem(heroSplitAANYC)}
-                {photoItem(heroCirqueHaus)}
-                {photoItem(cryBabySplit)}
-                {photoItem(toePoseHeroCH)}
-                {photoItem(cryBabyBW)}
-                {photoItem(heroAANYCMarch)}
+                {_.map(_.keys(imageDescriptionMap), key => photoItem(key))}
             </div>
 
 
