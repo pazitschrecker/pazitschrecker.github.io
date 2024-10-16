@@ -53,6 +53,7 @@
 
     }
 
+    flex-wrap:wrap;
     color: var(--color-text);
 }
 
@@ -65,4 +66,14 @@
         cursor: unset;
     }
 
+    .performanceContainer {
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 58px 10%;
+        gap: 0px;
+    }
 }

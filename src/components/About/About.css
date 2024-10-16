@@ -54,17 +54,25 @@
 
 
 @media screen and (max-width: 768px) {
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .content {
         flex-direction: column;
     }
 
     .aboutImage {
         display: none;
+    }
+
+    .aboutItem {
+        width: 100%;
+    }
+
+    .aboutText {
+        padding-right: unset;
+    }
+
+    .container {
+        padding-top: unset;
+        padding-bottom: unset;
     }
 
 }
